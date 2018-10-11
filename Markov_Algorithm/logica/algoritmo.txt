@@ -1,0 +1,7 @@
+//Alfabeto
+L = {a, b}
+
+//Reglas
+ 
+ab -> a
+a -> b

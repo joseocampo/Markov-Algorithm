@@ -1,0 +1,8 @@
+//Alfabeto
+L = {x,y,z}
+
+//Reglas
+ 
+x ->  y
+y ->  z
+z -> x
