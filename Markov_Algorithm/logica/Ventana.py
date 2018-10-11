@@ -9,7 +9,7 @@ from os import path
 
 
 class Ventana():
-
+#commit
 # este es un comentario para hacer commit
     def __init__(self):
         self.initializeComponents()
