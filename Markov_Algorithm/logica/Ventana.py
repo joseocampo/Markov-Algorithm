@@ -192,6 +192,9 @@ class Ventana():
         print(self.__lineas[1])
         if(self.isAlfabeto(self.__cajatexto.get())):
             self.__historial.insert(INSERT, "[" + str(len(self.__cajatexto.get())) + "] " + self.__cajatexto.get() + "\n")
+            
+            #markovAlgorim(self.__cajatexto.get(), reglas); El segundo parametro deben ser las reglas, una lista con el formato indicado.
+            #Este algoritmo devuelve la cadena resultado despues de aplicar toda slas reglas posibles.
         else:
             messagebox.showwarning("Esta palabra no corresponde al lenguaje utilizado!")
     
