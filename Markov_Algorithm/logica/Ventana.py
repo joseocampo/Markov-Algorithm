@@ -51,16 +51,17 @@ class Ventana():
         self.__root = Tk()
         self.__root.title("Paradigmas (Traductor)")
         self.__root.geometry("1000x550")
-        self.__root.minsize(700, 300)
+        self.__root.minsize(975, 300)
         self.__frame1 = Frame(self.__root, bg="white")
         self.__frame2 = Frame(self.__root, bg="white")
+        
         
         self.__frame1.pack(side=LEFT, expand=TRUE, fill="both")
         self.__frame2.pack(side=RIGHT, expand=TRUE, fill="both")
         
     def addWidgetsLeftFrame(self):
-        self.__cajalenguaje = Text(self.__frame1, width=80, height=33, bd=5, fg="blue", font=("Calibri", 12))
-        self.__cajalenguaje.grid(row=1, column=0, padx=1, pady=1)
+        self.__cajalenguaje = Text(self.__frame1, width=80, height=26, bd=2, fg="blue", font=("Calibri", 12))
+        self.__cajalenguaje.grid(row=1, column=0, padx=1, pady=1, sticky=W + E + N + S)
         
         # widgets de frame de  la derecha
         self.__frameRun = Frame(self.__frame2, bg="lightgray")
